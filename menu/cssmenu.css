@@ -1,0 +1,186 @@
+/* ********** Style for menus.php */
+/* ********** Drop Down Menu function and positioning*/
+#hmenu ul ul,
+#hmenu li:hover ul ul,
+#hmenu li li:hover ul ul,
+#hmenu li li li:hover ul ul,
+#hmenu li li li li:hover ul ul,
+#vmenu ul ul,
+#vmenu li:hover ul ul,
+#vmenu li li:hover ul ul,
+#vmenu li li li:hover ul ul,
+#vmenu li li li li:hover ul ul{
+	display:none;
+}
+#hmenu li:hover ul,
+#hmenu li li:hover ul,
+#hmenu li li li:hover ul,
+#hmenu li li li li:hover ul,
+#vmenu li:hover ul,
+#vmenu li li:hover ul,
+#vmenu li li li:hover ul,
+#vmenu li li li li:hover ul{
+	display:block;
+}
+#hmenu li,
+#vmenu li {
+	position:relative;
+}
+#hmenu ul,
+#vmenu ul{
+	width:9.0em;
+	padding:0;
+}
+div#hmenu ul,
+div#hmenu ul ul,
+div#hmenu ul ul ul,
+div#hmenu ul ul ul ul,
+div#hmenu ul ul ul ul ul,
+div#vmenu ul,
+div#vmenu ul ul,
+div#vmenu ul ul ul,
+div#vmenu ul ul ul ul,
+div#vmenu ul ul ul ul ul{
+	list-style:none;
+}
+#hmenu ul{
+	float:left;
+	width:6.98em;
+}
+#hmenu{
+	height:1.8em;
+}
+#hmenu ul ul,
+#vmenu ul ul{
+	position:absolute;
+	z-index:500;
+	top:auto;
+}
+/* ********** Menu opens downwards and to the right (standard)*/
+#vmenu ul ul{
+	top:0;
+	left:9.0em;
+}
+#hmenu ul ul ul{
+	top:0;
+	left:7.0em;
+}
+/* ********** Menu opens upwards*/
+#hmenu.menuupleft ul ul,
+#hmenu.menuup ul ul{
+	bottom:0.9em;
+}
+#hmenu.menuupleft ul ul ul,
+#hmenu.menuup ul ul ul{
+	bottom:-0.35em;
+	top:auto;
+}
+#vmenu.menuupleft ul ul,
+#vmenu.menuup ul ul{
+	bottom:-0.15em;
+	top:auto;
+}
+/* ********** Menu opens to the left*/
+#hmenu.menuupleft ul ul,
+#hmenu.menuleft ul ul{
+	right:-0.3em;
+}
+#hmenu.menuupleft ul ul ul,
+#hmenu.menuleft ul ul ul{
+	left:-7.15em;
+}
+#vmenu.menuupleft ul ul,
+#vmenu.menuleft ul ul{
+	left:-9.15em;
+}
+/* ********** Styling */
+#hmenu ul{
+	margin:0 5px 5px 0;
+	border:1px solid #aaa;
+}
+#vmenu ul{
+	margin:0 0 2px 0;
+	border:1px solid #aaa;
+}
+#hmenu ul .createlink,
+#vmenu ul .createlink{
+	display:none;
+}
+#hmenu ul a,
+#vmenu ul a{
+	color:#888;
+	border-bottom:none;
+}
+#vmenu ul li{
+	padding-left:0;
+	border:none;
+}
+#hmenu li:hover,
+#vmenu li:hover{
+	cursor:pointer;
+	z-index:100;
+}
+#hmenu .menuitem,
+#hmenu .menutitle,
+#vmenu .menuitem,
+#vmenu .menutitle{
+	display:block;
+	width:100%;
+	background:#ddd;
+	margin:0;
+	padding:1px 0;
+	font-size:95%;
+	text-indent:3px;
+	white-space:nowrap;
+}
+#hmenu .menutitle a,
+#vmenu .menutitle a{
+	color:#190707;
+	font-weight: bold;
+	font-size:100%;
+	padding:0;
+	background:transparent;
+}
+#hmenu ul ul .menuitem:hover,
+#vmenu ul ul .menuitem:hover{
+	background:#ccc;
+}
+#hmenu ul ul .menuitem,
+#vmenu ul ul .menuitem{
+	background:#ddd;
+	font-size:80%;
+}
+#hmenu a,
+#vmenu a{
+	display:block;
+	text-decoration:none;
+}
+#hmenu a:hover,
+#vmenu a:hover{
+	color:#00f;
+	background:transparent;
+}
+#hmenu .menutitle,
+#vmenu .menutitle{
+	background:#eee;
+}
+#hmenu .menutitle:hover,
+#vmenu .menutitle:hover{
+	background:#ddd;
+}
+#hmenu .menuseparator,
+#vmenu .menuseparator{
+	display:block;
+	width:100%;
+	height:2px;
+	background:#999;
+	font-size:2px;
+	color:#999;
+}
+
+/* Fix IE. Hide from IE Mac \*/
+* html #hmenu ul li{float:left;height:1%;}
+* html #vmenu ul li{float:left;height:1%;}
+* html #hmenu ul li a{height:1%;}
+* html #vmenu ul li a{height:1%;}
+/* End */

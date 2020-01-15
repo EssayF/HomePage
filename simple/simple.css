@@ -1,0 +1,447 @@
+/*
+
+//
+// Copyright (C) Julian I. Kamil <julian.kamil@gmail.com>
+// No warranty is provided.  Use at your own risk.
+//
+// Name: simple.css
+// Author: Julian I. Kamil <julian.kamil@gmail.com>
+// Created: 2005-05-18
+// Description:
+//     This is a simple skin for PmWiki.
+//
+// History:
+//     2005-05-18  jik  Created.
+//     2005/06/27  jik  Added SkinTone feature.
+//     2005/07/08  jik  Made the #text monospace.
+//
+
+*/
+
+body {
+    margin: 0; 
+    padding: 0; 
+    background: #fff; 
+    text-align: center;
+    font: 10pt Verdana;
+    line-height: 20px;
+    color: #666;
+}
+
+#header {
+    width: 1010px; 
+    height: 90px;
+    margin: 10px auto; 
+    text-align: left; 
+    margin-bottom: 0;
+}
+.Header2 {
+    color: rgb(167, 167, 167);
+    font-family: 'Arial-BoldMT', 'Arial', sans-serif;
+    font-size: 36px;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 42px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    opacity: 1.00;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    text-align: center;
+    text-decoration: none;
+    text-indent: 0px;
+    text-transform: none;
+}
+.paragraph_style_2 {
+    color: rgb(88, 77, 77);
+    font-family: 'ArialMT', 'Arial', sans-serif;
+    font-size: 20px;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 27px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    opacity: 1.00;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0px;
+    text-transform: none;
+}
+#header #page-title { 
+    color: #ddd; 
+    font: 18pt Arial;
+    font-weight: bold;
+    padding: 20px 8px 8px 30px;
+}
+
+#header #page-subtitle { 
+    color: #aaa; 
+    font: 12pt Arial;
+    font-weight: bold;
+    padding: 0px 8px 8px 30px;
+}
+
+#main {
+    width: 1010px; 
+    margin: 0px auto;
+    background: url(Image_cote2.png) repeat-y top center; 
+    border-bottom: 1px solid transparent;
+}
+
+.content-mat {
+    padding: 15px 15px 0px 30px;
+    margin: auto;
+    background: none;
+}
+
+#main h1 { font-size: 10pt; margin: 0px; padding: 0px; padding-top: 6px; padding-bottom: 4px;}
+#main h2 { font-size: 10pt; margin: 0px; padding: 0px; padding-top: 6px; padding-bottom: 4px;}
+#main h3 { font-size:  9pt; margin: 0px; padding: 0px; padding-top: 6px; padding-bottom: 4px;}
+#main h4 { font-size:  8pt; margin: 0px; padding: 0px; padding-top: 6px; padding-bottom: 4px;}
+
+#sidebar {
+    float: right;
+    width: 160px; 
+    font: 8pt Verdana;
+    border: 1px solid #00f; 
+}
+
+#sidebar h2 { font-size: 10pt; margin: 0px; padding: 0px; }
+#sidebar h3 { font-size:  9pt; margin: 0px; padding: 0px; }
+#sidebar h4 { font-size:  8pt; margin: 0px; padding: 0px; }
+
+#content {
+    float: left;
+    width: 952px; 
+    text-align: left;
+    border: 1px solid #00f; 
+}
+
+#footer {
+    background: url(Image_bas2.png) no-repeat top center; 
+    width: 1010px; 
+    height: 40px;
+    border: 1px none #ccc; 
+    margin: 0px auto;
+    padding: 0px 0px 8px 0px auto;
+}
+
+#sidebar ul { 
+    list-style: none outside; 
+    margin: 0px; 
+    padding: 0px;
+}
+
+ul.square { list-style: square outside; margin: 0 0 0 16px; padding: 0 0 1em 0; }
+ul.circle { list-style: circle outside; margin: 0 0 0 16px; padding: 0 0 1em 0; }
+
+#sidebar li { 
+    padding-bottom: 2px; 
+    font-weight: bold;
+    color: #666;
+    font-size: 10px;
+}
+
+div.clearer{
+    clear: both; 
+    display: block; 
+    margin: 0; 
+    padding: 0; 
+    height: 0; 
+    line-height: 1px; 
+    font-size: 1px;
+}
+
+#copyright {
+    margin-left: 12px;
+    margin-right: 12px;
+    border-top: 1px solid #ccc;
+    font-size: 8pt;
+}
+
+/* ***** */
+
+#menubar {
+    margin-left: 15px;
+    margin-right: 15px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: 10px;
+    font-weight: bold;
+    padding-top: 3px;
+    padding-bottom: 0px;
+    background-color: #dfdfdf;
+}
+
+#menubar ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+#menubar ul li {
+    list-style: none;
+    display: inline;
+    text-indent: 0px;
+    text-align: left;
+    padding-right: 8px;
+}
+
+ul {
+    margin: 12px; 
+    padding: 12px;
+    margin-top: 0px; 
+    padding-top: 0px;
+    margin-bottom: 4px;
+    padding-bottom: 4px;
+    list-style: disc outside;
+}
+
+ul ul {
+    margin-top: 0px; 
+    padding-top: 0px;
+    list-style: circle outside;
+}
+
+ul ul ul {
+    margin-top: 0px; 
+    padding-top: 0px;
+    list-style: square outside;
+}
+
+h4 {
+    margin: 0px; 
+    padding: 0px;
+}
+
+.vspace {
+    margin: 0px; 
+    padding: 2px;
+}
+
+a { text-decoration:none; color: #00f; }
+a:visited { text-decoration:none; color: #00f; }
+a:hover { text-decoration:underline; color: #00f; }
+a:active { color: #00f; }
+
+#header a { color: #ddd; }
+
+#menubar a { color: #00f; }
+
+table {
+    border-collapse: collapse;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+table tr td {
+    border: 1px solid #ccc;
+    padding: 4px;
+}
+
+.toctitle {
+    font-size: 8pt;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-top: 1px none #ddd;
+}
+
+div.toc {
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 16px;
+}
+
+.toc ol {
+    font-size: 8pt;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 12px;
+    padding-left: 12px;
+    list-style-type: decimal;
+}
+
+.toc ol ol {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.toc ol li {
+    margin-left: 8px;
+}
+
+#text {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-family: monospace;
+}
+
+hr {
+    border: 0px;
+    height: 1px;
+    background-color: #ccc;
+    color: #ccc;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+a.createlink { 
+    text-decoration:none; 
+    position:relative; 
+    top:-0.5em;
+    font-size:smaller; 
+    border-bottom:none; 
+    }
+
+a.createlinktext { 
+    text-decoration:none; 
+    border-bottom:1px dotted #ccc; 
+}
+
+#wikidiff {
+    border: 1px none #bbb;
+    padding-top: 12px;
+    font-size: 8pt;
+}
+
+.diffbox {
+    border: 1px solid #ccc;
+    padding: 0px;
+}
+
+.difftime {
+    background-color: #eee;
+}
+
+.diffrestore {
+    padding-bottom: 12px;
+}
+
+.difftime, .difftype, .diffdel, .diffadd {
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.diffdel, .diffadd {
+    border: 1px dotted #ddd;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+ol {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#wikitext pre {
+    padding: 0px;
+    margin: 0px;
+}
+
+#wikiedit form {
+    padding: 0px;
+    margin: 0px;
+}
+
+#wikiedit textarea {
+    font-size: 9pt;
+    padding: 0px;
+    margin: 0px;
+}
+
+#editaction {
+    padding: 0px;
+    margin: 0px;
+}
+
+#editaction tr td {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+#editaction a {
+    font-weight: bold;
+}
+
+#popupmenu li:hover {
+    background: #444;
+    color: #eec;
+}
+
+#popupmenu li:hover ul {
+    display: block;
+    margin-top: 10px;
+    background: #444;
+}
+
+#popupmenu ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+#popupmenu ul li {
+    padding-left: 6px;
+    margin: 0px;
+    float: left;
+    position: relative;
+    border: 1px none #f00;
+}
+
+#popupmenu li ul {
+    display: none;
+    position: absolute;
+    top: 1em;
+    left: -86px;
+    width: 180px;
+    border-top: 1px solid #888;
+    border-bottom: 1px solid #888;
+    padding-top: 2px;
+    padding-bottom: 6px;
+}
+
+#popupmenu li ul li {
+    display: block;
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+    padding-right: 8px;
+    padding-left: 8px;
+    float: left;
+    color: #aaa;
+}
+
+#popupmenu li ul li:hover {
+    color: #aaa;
+}
+
+#popupmenu a {
+    color: #aaa;
+}
+
+#popupmenu a:hover {
+    color: #fff;
+}
